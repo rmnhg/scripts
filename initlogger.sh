@@ -37,7 +37,7 @@ busybox mknod -m 666 /dev/null c 1 3
 #Mount filesystems
 busybox mount -t proc proc /proc
 busybox mount -t sysfs sysfs /sys
-busybox mount -t ext4 ${BOOTREC_CACHE} /data
+busybox mount -t ext4 ${BOOTREC_CACHE} /cache
 
 #Keep kmsg
 if [ ! -f ${LOGS_DIR} ]; then
